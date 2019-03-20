@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Survey Form</title>
+    <style>
+        body {
+            height: 650px;
+            font-size: 1.2em;
+        }
+
+        main {
+            margin: auto;
+            display: flex;
+            width: 60%;
+            height:100%;
+            justify-content: center;
+            background-color: lightgray;
+            flex-direction: row;
+        }
+
+        header {
+            text-align: center;
+        }
+
+
+        .question {
+            text-align: right;
+            position: relative;
+            vertical-align: top;
+        }
+
+        .input-field {
+            width: 80%;
+        }
+
+        #description {
+            text-align: center;
+            font-size: 1.3em;
+        }
+
+        table {
+            border-spacing: 20px, 0;
+        }
+
+        tr {
+            height: 30px;
+            vertical-align: top;
+        }
+
+        td {
+            padding: 5px;
+            width: 50%;
+        }
+
+        #submit_button {
+            text-align: center;
+            margin: auto 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+    <main>
+        <div>
+            <p id="description">
+                <label>Let us know how we can improve freeCodeCamp </label>
+            </p>
+            <form id="survey-form">
+                <table>
+                    <tr>
+                        <td class="question"> <label id="name-label">*Name: </label> </td>
+                        <td class="answer"> <input class="input-field" type="text" id="name" required
+                                placeholder="Enter your name"> </td>
+                    </tr>
+                    <tr>
+                        <td class="question"> <label id="email-label">*Email: </label> </td>
+                        <td class="answer"> <input class="input-field" type="email" id="email" required
+                                placeholder="Enter you Email"> </td>
+                    </tr>
+                    <tr>
+                        <td class="question"><label id="number-label">*Age: </label> </td>
+                        <td class="answer"> <input class="input-field" id="number" type="number" min=0 max=99 required
+                                placeholder="Age">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="question"> <label>Which option best describes your current role?</label> </td>
+                        <td class="answer">
+                            <select id="dropdown">
+                                <option value="" disabled>Select an option</option>
+                                <!-- <optgroup label="Select an option">Select an option</optgroup>  -->
+                                <option value="Student">Student</option>
+                                <option value="Full Time Job">Full Time Job</option>
+                                <option value="Full Time Learner">Full Time Learner</option>
+                                <option value="Prefer not to say">Prefer not to say</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="question">
+                            <label>* How likely is that you would recommend freeCodeCamp to a friend?</label>
+                        </td>
+                        <td class="answer">
+                            <label><input type="radio" name="recommandation" value="Definitely"> Definitely </label>
+                            </br>
+                            <label><input type="radio" name="recommandation" value="Maybe"> Maybe </label></br>
+                            <label><input type="radio" name="recommandation" value="Not Sure"> Not Sure </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="question"> <label>What do you like most in FCC: </label> </td>
+                        <td class="answer">
+                            <select>
+                                <option value="" disabled>Select an option</option>
+                                <option value="Projects">Projects</option>
+                                <option value="Challenges">Challenges</option>
+                                <option value="Community">Community</option>
+                                <option value="Open Source">Open Source</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="question">
+                            <label>
+                                Things that should be improved in <br>
+                                the future <br>
+                                (Check all that apply):
+                            </label>
+                        </td>
+                        <td class="answer">
+                            </label>
+                            <input type="checkbox" name="suggestion" value="Front-end Projects">
+                            Front-end Projects
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="suggestion" value="Back-end Projects">
+                                Back-end Projects
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="suggestion" value="Data Visualization">
+                                Data Visualization
+                            </label> <br>
+                            <label>
+                                <input type="checkbox" name="suggestion" value="Challenges">
+                                Challenges </label> <br>
+                            <label>
+                                <input type="checkbox" name="suggestion" value="Open Source Community">
+                                Open Source Community </label> <br>
+                            <label>
+                                <input type="checkbox" name="suggestion" value="Additional Courses">
+                                Additional Courses
+                            </label> <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="question"> <label>Any Comments or Suggestions? </label> </td>
+                        <td class="answer"> <textarea rows="5" cols="20"
+                                placeholder="Enter you comment here..."> </textarea></td>
+                    </tr>
+                </table>
+                <div id="submit_button">
+                    <button type="submit" id="submit">Submit </button>
+                </div>
+
+            </form>
+
+
+        </div>
+    </main>
+    <script src=" https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
