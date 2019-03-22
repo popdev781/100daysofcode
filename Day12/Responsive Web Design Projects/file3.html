@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Landing Page</title>
+    <style>
+        body {
+            background-color: snow;
+        }
+
+        #header {
+            background-color: snow;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+        }
+
+        #header-img {
+            max-width: 100px;
+            margin-top: 10px;
+            margin-left: 10px;
+            padding: 5px;
+            background-color: linen;
+        }
+
+        #nav-bar {
+            background-color: lightcyan;
+            font-size: 25px;
+            float: right;
+            margin-top: 15px;
+        }
+
+        #nav-bar ul {
+            display: inline;
+        }
+
+        #nav-bar li {
+            margin-right: 10px;
+            display: inherit;
+            text-decoration: none;
+            background-color: lightgrey;
+            padding: 10px;
+            float: left;
+            margin-right: 20px;
+        }
+
+
+        main {
+            max-width: 800px;
+            margin: 100px auto 10px auto;
+            width: 80%;
+        }
+
+
+        #features {
+            background-color: inherit;
+            margin: auto;
+
+        }
+
+        #subscribe {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #form {
+            padding-bottom: 20px;
+        }
+
+        #form-content {
+            display: inline-block;
+            margin: auto;
+
+        }
+
+        #form h3 {
+            font-size: 30px;
+
+        }
+
+        #how-it-works {
+            background-color: inherit;
+            margin: auto;
+            display: block;
+        }
+
+        #how-it-works iframe {
+            width: 800px;
+            height: 600px;
+        }
+
+        @media (max-width: 600px) {
+            #how-it-works iframe {
+                height: 300px;
+                width: 100%;
+            }
+        }
+
+
+        #pricing {
+            background-color: blueviolet;
+            margin: auto;
+        }
+
+        .quotes {
+            margin: 2px;
+            width: 100%;
+            margin: auto;
+            padding-top: 3px;
+        }
+
+        .q_title {
+            font-size: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <img src="./../../logo.png" id="header-img" />
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#features" class="nav-link"> Features </a> </li>
+                <li> <a href="#how-it-works" class="nav-link"> How it Works </a></li>
+                <li> <a href="#pricing" class="nav-link"> Pricing </a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="subscribe">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <div id="form-content">
+                    <h3>Some info about the form. </h3>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" />
+                    <br>
+                    <input type="submit" id="submit" value="Get Started" />
+
+                </div>
+            </form>
+
+        </section>
+        <section id="features">
+
+            <div class="quotes">
+                <div class="q_title">
+                    <label>Quote1</label>
+                </div>
+                <p class="f_text">
+                    <label>Only I can change my life. No one can do it for me. </label>
+                </p>
+            </div>
+            <div class="quotes">
+                <div class="q_title">
+                    <label>Quote2</label>
+                </div>
+                <p class="f_text">
+                    <label>Good, better, best. Never let it rest. 'Til your good is better and your better is best.
+                    </label>
+                </p>
+            </div>
+            <div class="quotes">
+                <div class="q_title">
+                    <label>Quote3</label>
+                </div>
+                <p class="f_text">
+                    <label>It does not matter how slowly you go as long as you do not stop. </label>
+                </p>
+
+            </div>
+        </section>
+        <section id="how-it-works">
+            <iframe id="video" src="https://www.youtube.com/embed/X06gB6VOCeU" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+        <section id="pricing">
+            <div>
+                <label>Here is suome dummy data.</label> <br>
+                <label>Here is suome dummy data.</label> <br>
+                <label>Here is suome dummy data.</label> <br>
+                <label>Here is suome dummy data.</label> <br>
+                <label>Here is suome dummy data.</label> <br>
+                <label>Here is suome dummy data.</label> <br>
+                <label>Here is suome dummy data.</label> <br>
+                <label>Here is suome dummy data.</label> <br>
+
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
