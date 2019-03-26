@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Portfolio Webpage</title>
+
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: monospace;
+        }
+
+        #navbar {
+            position: fixed;
+            text-align: right;
+            top: 0;
+            margin: 0px;
+            padding: 0px;
+            height: 80px;
+            width: 100%;
+            background-color: inherit;
+            z-index: 1
+        }
+
+        #navbar-items {
+            background-color: inherit;
+            width: 100%;
+            font-size: 35px;
+            position: fixed;
+        }
+
+        #navbar-items li {
+            display: inline-block;
+            /* border-style: solid;*/
+            margin-right: 55px;
+        }
+
+        #navbar-items li a {
+            text-decoration: none;
+
+        }
+
+        #main-section {
+            position: relative;
+            display: block;
+            margin-top: 100px;
+        }
+
+        #welcome-section {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            margin: auto;
+            width: 100%;
+            background-color: inherit;
+        }
+
+        #welcome-section div {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 50%;
+            width: 50%;
+            margin: auto;
+            padding: auto;
+            background-color: inherit;
+            text-align: center;
+            font-size: 200%;
+        }
+
+        #projects {
+            background-color: inherit;
+            padding-top: 60px;
+            margin-top: 60px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #project-group {
+            background-color: inherit;
+            width: 80%;
+            margin: auto;
+        }
+
+        #project-group a {
+            height: 350px;
+            width: 350px;
+            display: inline-block;
+            margin: 30px 40px;
+            border: solid;
+            border-color: rgb(169, 179, 185);
+            text-decoration: none;
+        }
+
+        #project-group img {
+            height: 250px;
+            width: 300px;
+            margin: 20px auto;
+            /*
+            border: solid;
+            border-color: lightblue;
+            */
+        }
+
+
+        .project-tile {
+            margin-bottom: 20px;
+        }
+
+        #contact {
+            width: 75%;
+            padding-top: 100px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        #contact-text {
+            font-size: 140%;
+            padding-bottom: 50px;
+        }
+
+        #contact-group {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+
+        .contact-link {
+            font-size: 1.5em;
+            margin: auto 20px;
+            ;
+            line-height: 2em;
+            /*
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 30%;
+            background-color: rgb(212, 201, 201);             
+            */
+        }
+
+        #footer {
+            position: relative;
+            display: block;
+            bottom: 0;
+            width: 100%;
+            font-size: 20px;
+            background-color: rgb(172, 181, 189);
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+        #footer-text {
+            display: block;
+            margin-left: 30px;
+            text-align: justify;
+        }
+
+        @media (max-width: 800px) {
+
+            #navbar-items {
+                display: flex;
+                flex-direction: column;
+                left: auto;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+            }
+
+            #navbar-items li {
+                margin: 5px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <ul id="navbar-items">
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+    <main id="main-section">
+        <section id="welcome-section">
+            <div>
+                <h1> Hey, I am Praveen </h1>
+                <p>I am a Linux Admin</p>
+
+            </div>
+        </section>
+
+        <section id="projects">
+            <p> Here are some of my projects..</p>
+            <div id="project-group">
+                <a href="https://codepen.io/popdev781/pen/vPzJKB" target="_blank">
+                    <img src="./../../images/project1.png" alt="project" />
+                    <div class="project-tile">FCC: Tribute Page </div>
+                </a>
+                <a href="https://codepen.io/popdev781/pen/QoZxQB" target="_blank">
+                    <img src="./../../images/project2.png" alt="" />
+                    <div class="project-tile">FCC: Survey Form </div>
+                </a>
+                <a href="https://codepen.io/popdev781/pen/wOQNmq" target="_blank">
+                    <img src="./../../images/project3.png" alt="" />
+                    <div class="project-tile">FCC: Product Landing Page </div>
+                </a>
+                <a href="https://codepen.io/popdev781/pen/GezWze" target="_blank">
+                    <img src="./../../images/project4.png" alt="" />
+                    <div class="project-tile">FCC: Technical Documentation Page </div>
+                </a>
+                <a href="https://codepen.io/popdev781/pen/eXxwja" target="_blank">
+                    <img src="./../../images/project5.png" alt="" />
+                    <div class="project-tile">FCC: Personal Portfolio Webpage </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div id="contact-text">
+                <h3>Let's connect together...</h3>
+                <p>How do you take your coffee?</p>
+            </div>
+            <div id="contact-group">
+                <div class="contact-link"><a href="https://www.facebook.com/praveen.thapliyal.106"
+                        target="_blank">Facebook</a></div>
+                <div class="contact-link"><a id="profile-link" href=" https://github.com/popdev781"
+                        target="_blank">GitHub</a></div>
+                <div class="contact-link"><a href="https://twitter.com/pthapliyal781" target="_blank">Twitter</a></div>
+                <div class="contact-link"><a href="mailto:dummy@example.com" data-rel="external">Send a mail</a></div>
+
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div id="footer-text">
+            <p>**This is just a fake portfolio.. All the projects and contact details given are for testing purpose..
+            </p>
+            <p>&copy; Created for <a href="https://www.freecodecamp.com/"> FreeCodeCamp </a> </p>
+            <p>Created By - Praveen Chandra Thapliyal</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
